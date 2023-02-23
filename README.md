@@ -173,18 +173,18 @@ Veamos eso:
 
 Podemos ver que nuestro enrutador no hace match con ninguna de nuestras rutas, por ende, nosotros podríamos crear una nueva página para manejar estos casos, y en caso de que nos llegue una URL que no haga match, mostrar un error, por ejemplo un 404 not found.
 
-1 - Crear una nueva página y nombrarla `NotFound.jsx`. El contenido de la misma debe ser información para el usuario que la url que ingreso no existe o bien "página no encontrada".
+1 - Crear una nueva página y nombrarla `NotFound.jsx` dentro de nuestro directorio `pages`. El contenido de este componente debe dar información al usuario que la página no ha sido encontrada. Ej: Error 404, página no encontrada.
 
 2 - Añadir la página al archivo de barril.
 
-3 - Crear una nueva ruta, el path será `path="/*"` y el elemento debe ser nuestra página recién creada. Lo que indicamos con "\*" es que todo lo que venga después de nuestra barra "/" hará match con la página que ingresemos en element.
+3 - Crear una nueva ruta, el path será `path="/*"` y el elemento debe ser nuestra página recién creada. Lo que indicamos con /\* es que si una página no hace match con ninguna de nuestras rutas, va a hacer match con esta.
 
-4 - Crear en el directorio "auth" el directorio pages y añadir dentro dos páginas, una para login y otra para registro.
+4 - Crear en el directorio `auth` el directorio `pages` y añadir dentro dos páginas, una para login y otra para registro.
 
-5 - crear dentro de "auth" el archivo de barril y exportar estas páginas.
+5 - crear dentro de `auth` el archivo de barril y exportar estas páginas.
 
-6 - crear rutas para login y registros.
+6 - crear rutas para login y registros, los path son a elección.
 
-7 - En nuestro Navbar, reemplazar el login por el texto ingresar. Debe contener un link al igual que el logo, solo que este va a dirigir a mi ruta de loguearse.
+7 - En nuestro `Navbar`, hay un div que contiene el texto "ingresar", en este vamos a implementar un `Link` similar al del logo, solo que este va a dirigir a mi ruta del componente `Login`, o sea, al path que optaron para el mismo.
 
 Nos vemos con la solución la semana que viene.
