@@ -20,7 +20,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div>
-        ingresar
+        <Link to="/login">ingresar</Link>
       </div>
     </nav>
   )

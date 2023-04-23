@@ -10,3 +10,4 @@ export * from './components/Navbar';
 export * from './pages/RAMPage';
 export * from './pages/Episodes';
 export * from './pages/Location';
+export * from './pages/NotFound';
